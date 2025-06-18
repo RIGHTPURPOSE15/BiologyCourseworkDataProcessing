@@ -1,4 +1,3 @@
-# Re-import libraries and reload data after code state reset
 import pandas as pd
 from scipy.stats import f_oneway, ttest_ind
 
@@ -23,7 +22,7 @@ data = {
     ]
 }
 
-# Create DataFrame and calculate GreenNorm
+# Create a DataFrame and calculate GreenNorm
 df = pd.DataFrame(data)
 df["GreenNorm"] = df["Green"] / (df["Red"] + df["Green"] + df["Blue"])
 
